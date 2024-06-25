@@ -56,7 +56,7 @@ def exportar_para_excel():
 def enviar_email():
     outlook = win32.Dispatch('outlook.application')
     email = outlook.CreateItem(0)
-    email.To = 'gleidson.testes1@outlook.com'
+    email.To = 'email@outlook.com'
     email.Subject = 'Email de atualização do Trello'
     email.HTMLBody = """
     <p>Olá a todos,</p>
